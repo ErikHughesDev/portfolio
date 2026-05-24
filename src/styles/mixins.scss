@@ -1,0 +1,60 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin absolute-fill {
+    position: absolute;
+    inset: 0;
+}
+
+@mixin text-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin focus-ring {
+    &:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+        border-radius: var(--radius-sm);
+    }
+}
+
+@mixin card-base {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 2px 12px var(--shadow);
+    transition:
+        box-shadow var(--duration) var(--ease),
+        transform var(--duration) var(--ease);
+}
+
+@mixin card-hover {
+    @include hover {
+        box-shadow: 0 8px 32px rgba(28, 26, 23, 0.14);
+        transform: translateY(-3px);
+    }
+}
+
+@mixin tag-base {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.2rem 0.65rem;
+    border-radius: var(--radius-pill);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
+    background: var(--bg-alt);
+    color: var(--ink-muted);
+    border: 1px solid var(--border);
+}

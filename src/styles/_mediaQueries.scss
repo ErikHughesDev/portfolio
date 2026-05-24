@@ -1,0 +1,49 @@
+// Breakpoints are defined in variables.scss
+@import "./variables";
+
+@mixin sm {
+    @media (min-width: #{$bp-sm}) {
+        @content;
+    }
+}
+@mixin md {
+    @media (min-width: #{$bp-md}) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width: #{$bp-lg}) {
+        @content;
+    }
+}
+@mixin xl {
+    @media (min-width: #{$bp-xl}) {
+        @content;
+    }
+}
+
+@mixin below-lg {
+    @media (max-width: #{$bp-lg - 1px}) {
+        @content;
+    }
+}
+
+@mixin below-md {
+    @media (max-width: #{$bp-md - 1px}) {
+        @content;
+    }
+}
+
+@mixin below-sm {
+    @media (max-width: #{$bp-sm - 1px}) {
+        @content;
+    }
+}
+
+@mixin hover {
+    @media (hover: hover) {
+        &:hover {
+            @content;
+        }
+    }
+}
