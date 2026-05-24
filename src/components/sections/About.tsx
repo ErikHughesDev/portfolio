@@ -52,7 +52,7 @@ export default function About() {
                                 both the design and the code.
                             </p>
                             <p>
-                                Outside of work, I'm a professional trombonist
+                                Outside of web development, I'm a professional trombonist
                                 with recording credits including Ariana Grande,
                                 Michael Bublé, and Dancing with the Stars, and a
                                 contributor to 5 Grammy-nominated works.
