@@ -16,6 +16,20 @@ export const projects: Project[] = [
         year: 2025,
     },
     {
+        id: "impact-promotions",
+        title: "Impact Promotions",
+        description:
+            "A promotional products marketing website built around a standout animated intro, custom video player, and interactive guessing game.",
+        longDescription:
+            "Designed and developed a custom Next.js front end paired with headless WordPress for content management. Built a custom video player and a fully interactive guessing game to drive on-site engagement, anchored by a standout animated intro sequence on the homepage with custom animations throughout. Hosted entirely on AWS infrastructure.",
+        tags: ["Next.js", "React", "SCSS", "Headless WordPress", "ACF", "AWS"],
+        url: "https://ipidirect.com",
+        imageColor: "linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)",
+        image: "/images/ipidirect.webp",
+        featured: true,
+        year: 2026,
+    },
+    {
         id: "coravie-medical",
         title: "CoraVie Medical",
         description:

@@ -46,11 +46,6 @@ export default function Hero() {
                 <div className={styles.blob} aria-hidden="true" />
 
                 <div className={styles.content}>
-                    <p className={styles.eyebrow}>
-                        <span className={styles.dot} />
-                        Available for new projects
-                    </p>
-
                     <h1 className={styles.headline}>
                         <span className={styles.lineOne}>Hi, I'm</span>
                         <span className={styles.name}>Erik Hughes.</span>

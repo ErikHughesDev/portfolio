@@ -103,11 +103,8 @@
     }
 }
 
-.eyebrow {
-    animation: fadeUp 0.7s var(--ease) 0.1s both;
-}
 .headline {
-    animation: fadeUp 0.7s var(--ease) 0.25s both;
+    animation: fadeUp 0.7s var(--ease) 0.1s both;
 }
 .tagline {
     animation: fadeUp 0.7s var(--ease) 0.38s both;
@@ -120,32 +117,6 @@
 }
 .pills {
     animation: fadeUp 0.7s var(--ease) 0.74s both;
-}
-
-.eyebrow {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.78rem;
-    font-weight: 500;
-    font-family: var(--font-mono);
-    color: var(--ink-muted);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 1.25rem;
-
-    @include below-lg {
-        justify-content: center;
-    }
-}
-
-.dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: #3cb371;
-    box-shadow: 0 0 0 3px rgba(60, 179, 113, 0.25);
-    flex-shrink: 0;
 }
 
 .headline {
