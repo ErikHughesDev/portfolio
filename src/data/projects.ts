@@ -2,13 +2,35 @@ import { Project } from "@/types/project";
 
 export const projects: Project[] = [
     {
+        id: "impact-promotions",
+        title: "Impact Promotions",
+        description:
+            "A direct mail marketing website for auto dealerships, built around a standout animated intro, custom video player, and interactive guessing game.",
+        longDescription:
+            "Designed and developed a custom Next.js site with Payload CMS for content management. Built a custom video player and a fully interactive \"Where's Wyatt?\" map guessing game to drive on-site engagement, anchored by a standout animated intro sequence on the homepage with custom animations throughout. Media delivered through AWS CloudFront.",
+        tags: ["Next.js", "React", "SCSS", "Payload CMS", "AWS"],
+        url: "https://wespeakcar.com",
+        imageColor: "linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)",
+        image: "/images/ipidirect.webp",
+        featured: true,
+        year: 2026,
+    },
+    {
         id: "musician-template",
         title: "Musician Website Template System",
         description:
             "A modular, media-forward website template combining custom audio/video integration with full e-commerce functionality.",
         longDescription:
-            "Built a fully custom audio player, Strapi-driven store with category filtering, and Stripe-powered checkout with secure digital delivery. Architected reusable components to support scalable customization while maintaining cohesive branding.",
-        tags: ["Next.js", "React", "SCSS", "Strapi", "Stripe API"],
+            "Built a fully custom audio player, Mux-powered video, a Payload CMS-driven store with category filtering, and Stripe-powered checkout with secure digital delivery. Architected reusable components to support scalable customization while maintaining cohesive branding.",
+        tags: [
+            "Next.js",
+            "React",
+            "SCSS",
+            "Payload CMS",
+            "PostgreSQL",
+            "Mux",
+            "Stripe API",
+        ],
         url: "https://musician-template.erikhughesdev.com",
         imageColor: "linear-gradient(135deg, #1C1A17 0%, #6B6355 100%)",
         image:'/images/musician.webp',
@@ -16,53 +38,48 @@ export const projects: Project[] = [
         year: 2025,
     },
     {
-        id: "impact-promotions",
-        title: "Impact Promotions",
+        id: "newkey",
+        title: "NewKey",
         description:
-            "A promotional products marketing website built around a standout animated intro, custom video player, and interactive guessing game.",
+            "A SaaS that transposes sheet music charts into a new key while preserving the original page layout.",
         longDescription:
-            "Designed and developed a custom Next.js front end paired with headless WordPress for content management. Built a custom video player and a fully interactive guessing game to drive on-site engagement, anchored by a standout animated intro sequence on the homepage with custom animations throughout. Hosted entirely on AWS infrastructure.",
-        tags: ["Next.js", "React", "SCSS", "Headless WordPress", "ACF", "AWS"],
-        url: "https://ipidirect.com",
-        imageColor: "linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)",
-        image: "/images/ipidirect.webp",
+            "Upload a PDF chart and get it back in any key, with the original layout intact. A Python transposition engine on AWS Lambda powers a Next.js and Payload CMS app with accounts and Stripe billing.",
+        tags: [
+            "Next.js",
+            "React",
+            "Payload CMS",
+            "PostgreSQL",
+            "Python",
+            "AWS Lambda",
+            "Stripe API",
+        ],
+        url: "https://newkey.app",
+        imageColor: "linear-gradient(135deg, #1A1815 0%, #C49A6C 100%)",
+        image: "/images/newkey.webp",
         featured: true,
         year: 2026,
     },
     {
-        id: "coravie-medical",
-        title: "CoraVie Medical",
+        id: "getmeonit",
+        title: "GetMeOnIt",
         description:
-            "A custom medical technology marketing site with scroll-based hero animations and a secure, gated content portal.",
+            "AI-assisted scheduling and roster management for band leaders: send the call, musicians respond from a link, and the app works out the lineup.",
         longDescription:
-            "Built responsive, performance-optimized layouts to clearly communicate complex clinical value. Integrated a password-protected portal using NextAuth with Strapi-backed user account management for approved user access.",
+            "Band leaders create ensembles and events; musicians reply through tokenized email links or a shared URL with no account required. Claude recommends the best date and lineup from each roster's hierarchy, pulling the leader in only when a judgment call is needed. Includes subscription billing, email delivery tracking, and a Payload-managed marketing site.",
         tags: [
             "Next.js",
             "React",
-            "SCSS",
-            "Strapi",
-            "Framer Motion",
-            "NextAuth",
+            "Payload CMS",
+            "PostgreSQL",
+            "Claude API",
+            "Stripe API",
+            "SendGrid",
         ],
-        url: "https://coraviemedical.com",
-        imageColor: "linear-gradient(135deg, #2B6CB0 0%, #4A90D9 100%)",
-        image:'/images/coravie.webp',
+        url: "https://getmeonit.com",
+        imageColor: "linear-gradient(135deg, #2E6B4F 0%, #F5F3EE 100%)",
+        image: "/images/getmeonit.webp",
         featured: true,
-        year: 2025,
-    },
-    {
-        id: "manzy",
-        title: "Manzanita Charter Middle School",
-        description:
-            "A bilingual (English/Spanish) school website built around a chalkboard-themed visual concept with SVG stroke-based animations.",
-        longDescription:
-            "Implemented SVG stroke animations to simulate hand-drawn icon effects in the hero. Built modular content sections, announcement systems, and document libraries with dynamic language switching across all content.",
-        tags: ["Next.js", "React", "SCSS", "Strapi", "Framer Motion"],
-        url: "https://manzy.org",
-        imageColor: "linear-gradient(135deg, #3B5E3A 0%, #7A9E79 100%)",
-        image:'/images/manzy.webp',
-        featured: true,
-        year: 2024,
+        year: 2026,
     },
     {
         id: "ark-wealth",
@@ -77,6 +94,27 @@ export const projects: Project[] = [
         image:'/images/ark.webp',
         featured: true,
         year: 2024,
+    },
+    {
+        id: "cryosa",
+        title: "Cryosa",
+        description:
+            "A marketing site for a clinical-stage medical device company developing an implant-free treatment for obstructive sleep apnea.",
+        longDescription:
+            "Built CMS-driven news, clinical studies, and careers sections, pairing patient-friendly messaging with cited clinical statistics and required investigational device disclosures. Added a sign-in-gated instructions-for-use portal with NextAuth. Structured content in Strapi so the team publishes news and study updates without developer support.",
+        tags: [
+            "Next.js",
+            "React",
+            "SCSS",
+            "Strapi",
+            "Cloudinary",
+            "NextAuth",
+        ],
+        url: "https://cryosa.com",
+        imageColor: "linear-gradient(135deg, #1E2A9C 0%, #F2B632 100%)",
+        image: "/images/cryosa.webp",
+        featured: true,
+        year: 2023,
     },
     {
         id: "thehang",

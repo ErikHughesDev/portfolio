@@ -11,13 +11,17 @@ const skills = {
     ],
     "Backend & CMS": [
         "Node.js",
+        "Python",
         "Django",
+        "PostgreSQL",
         "REST APIs",
+        "Payload CMS",
         "Strapi (Headless CMS)",
         "WebSockets",
     ],
     "Integrations & Infra": [
         "Stripe API",
+        "Claude API",
         "NextAuth",
         "AWS",
         "DigitalOcean",

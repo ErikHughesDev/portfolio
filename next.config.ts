@@ -5,6 +5,16 @@ const nextConfig = {
         // globals.scss handles the actual :root block and is imported once in layout.tsx.
         additionalData: `@import "@/styles/variables"; @import "@/styles/mixins"; @import "@/styles/_mediaQueries";`,
     },
+    async redirects() {
+        // The resume used to live at /resume.pdf; keep links already sent working.
+        return [
+            {
+                source: "/resume.pdf",
+                destination: "/erik-hughes-resume.pdf",
+                permanent: true,
+            },
+        ];
+    },
 };
 
 module.exports = nextConfig;

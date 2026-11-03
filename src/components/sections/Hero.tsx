@@ -74,6 +74,7 @@ export default function Hero() {
                             "React",
                             "SCSS",
                             "Framer Motion",
+                            "Payload CMS",
                             "Strapi",
                             "Stripe",
                             "Django",

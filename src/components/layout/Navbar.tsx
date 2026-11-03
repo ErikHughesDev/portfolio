@@ -69,7 +69,7 @@ export default function Navbar() {
                         ))}
                         <li>
                             <a
-                                href="/resume.pdf"
+                                href="/erik-hughes-resume.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={styles.resumeBtn}
@@ -113,7 +113,7 @@ export default function Navbar() {
                         ))}
                         <li>
                             <a
-                                href="/resume.pdf"
+                                href="/erik-hughes-resume.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={styles.drawerResume}
